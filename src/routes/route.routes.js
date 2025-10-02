@@ -1,11 +1,9 @@
-import express from 'express';
-import { createRoute, listRoutes, getRoute } from '../controllers/routes.controller.js';
-import { authenticate } from '../middlewares/auth.middleware.js';
-import { authorize } from '../middlewares/role.middleware.js';
+const express = require("express");
+const { getRoutes, addRoute } = require("../controllers/routes.controller");
+const auth = require("../middleware/auth.middleware");
+
 const router = express.Router();
+router.get("/", getRoutes);
+router.post("/", auth, addRoute);
 
-router.get('/', listRoutes);
-router.get('/:id', getRoute);
-router.post('/', authenticate, authorize(['admin','operator']), createRoute);
-
-export default router;
+module.exports = router;
