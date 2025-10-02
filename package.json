@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "Real-Time Bus Tracking API for NTC - Inter-Provincial",
   "main": "server.js",
-  "type": "module",
   "scripts": {
-  "start": "node src/server.js",
-  "dev": "nodemon src/server.js",
-  "seed": "node src/utils/seed.js"
-}
-,
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seed.js"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
