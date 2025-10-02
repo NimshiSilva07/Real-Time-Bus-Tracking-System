@@ -1,0 +1,27 @@
+{
+    "routes": [
+      { "routeNumber": "01", "start": "Colombo", "end": "Kandy", "distanceKm": 115 },
+      { "routeNumber": "02", "start": "Colombo", "end": "Galle", "distanceKm": 120 },
+      { "routeNumber": "03", "start": "Kandy", "end": "Jaffna", "distanceKm": 300 },
+      { "routeNumber": "04", "start": "Colombo", "end": "Anuradhapura", "distanceKm": 200 },
+      { "routeNumber": "05", "start": "Colombo", "end": "Badulla", "distanceKm": 230 }
+    ],
+    "buses": [
+      { "busNumber": "NB-1001", "route": "01", "currentLocation": { "lat": 6.9271, "lng": 79.8612 } },
+      { "busNumber": "NB-1002", "route": "01", "currentLocation": { "lat": 7.2906, "lng": 80.6337 } },
+      { "busNumber": "NB-2001", "route": "02", "currentLocation": { "lat": 6.0535, "lng": 80.2210 } },
+      { "busNumber": "NB-2002", "route": "02", "currentLocation": { "lat": 6.055, "lng": 80.218 } },
+      { "busNumber": "NB-3001", "route": "03", "currentLocation": { "lat": 7.2906, "lng": 80.6337 } },
+      { "busNumber": "NB-3002", "route": "03", "currentLocation": { "lat": 9.6615, "lng": 80.022 } },
+      { "busNumber": "NB-4001", "route": "04", "currentLocation": { "lat": 6.9271, "lng": 79.8612 } },
+      { "busNumber": "NB-4002", "route": "04", "currentLocation": { "lat": 8.3600, "lng": 80.4330 } },
+      { "busNumber": "NB-5001", "route": "05", "currentLocation": { "lat": 6.9271, "lng": 79.8612 } },
+      { "busNumber": "NB-5002", "route": "05", "currentLocation": { "lat": 6.993, "lng": 81.056 } }
+    ],
+    "trips": [
+      { "busNumber": "NB-1001", "routeNumber": "01", "departureTime": "2025-10-03T06:00:00Z", "arrivalTime": "2025-10-03T09:00:00Z" },
+      { "busNumber": "NB-1002", "routeNumber": "01", "departureTime": "2025-10-03T09:30:00Z", "arrivalTime": "2025-10-03T12:30:00Z" },
+      { "busNumber": "NB-2001", "routeNumber": "02", "departureTime": "2025-10-03T07:00:00Z", "arrivalTime": "2025-10-03T10:00:00Z" }
+    ]
+  }
+  
