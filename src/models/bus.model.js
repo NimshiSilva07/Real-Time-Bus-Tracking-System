@@ -1,13 +1,13 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
 const busSchema = new mongoose.Schema({
-  plateNumber: { type: String, required: true, unique: true },
-  operatorName: String,
-  capacity: Number,
-  model: String,
-  currentLocation: { type: mongoose.Schema.Types.ObjectId, ref: 'Location' },
-  assignedRoute: { type: mongoose.Schema.Types.ObjectId, ref: 'Route' },
-  status: { type: String, enum: ['idle','enroute','inactive'], default: 'idle' }
-}, { timestamps: true });
+  busNumber: { type: String, required: true },
+  route: { type: mongoose.Schema.Types.ObjectId, ref: "Route" },
+  currentLocation: {
+    lat: Number,
+    lng: Number,
+  },
+  status: { type: String, enum: ["running", "stopped"], default: "running" }
+});
 
-export default mongoose.model('Bus', busSchema);
+module.exports = mongoose.model("Bus", busSchema);

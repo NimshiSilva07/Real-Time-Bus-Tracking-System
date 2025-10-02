@@ -1,12 +1,10 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
 const routeSchema = new mongoose.Schema({
-  code: { type: String, required: true, unique: true }, // e.g. KANDY-COLOMBO-1
-  name: { type: String, required: true },
-  origin: { type: String, required: true },
-  destination: { type: String, required: true },
-  stops: [{ name: String, lat: Number, lng: Number }],
-  distance_km: Number,
-}, { timestamps: true });
+  routeNumber: { type: String, required: true },
+  start: { type: String, required: true },
+  end: { type: String, required: true },
+  distanceKm: Number
+});
 
-export default mongoose.model('Route', routeSchema);
+module.exports = mongoose.model("Route", routeSchema);
