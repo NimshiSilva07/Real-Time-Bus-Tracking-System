@@ -1,13 +1,9 @@
-import express from 'express';
-import { createBus, listBuses, getBus, postLocation, getBusLocations } from '../controllers/buses.controller.js';
-import { authenticate } from '../middlewares/auth.middleware.js';
-import { authorize } from '../middlewares/role.middleware.js';
+const express = require("express");
+const { getBuses, updateBusLocation } = require("../controllers/buses.controller");
+const auth = require("../middleware/auth.middleware");
+
 const router = express.Router();
+router.get("/", getBuses);
+router.put("/:id/location", auth, updateBusLocation);
 
-router.get('/', listBuses); // public
-router.get('/:id', getBus);
-router.post('/', authenticate, authorize(['admin','operator']), createBus); // add bus
-router.post('/:id/location', authenticate, authorize(['operator','admin']), postLocation); // push location
-router.get('/:id/locations', getBusLocations);
-
-export default router;
+module.exports = router;
