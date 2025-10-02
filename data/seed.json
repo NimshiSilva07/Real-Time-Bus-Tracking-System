@@ -1,0 +1,42 @@
+{
+    "routes": [
+      { "routeNumber": "01", "start": "Colombo", "end": "Kandy", "distanceKm": 115 },
+      { "routeNumber": "02", "start": "Colombo", "end": "Galle", "distanceKm": 120 },
+      { "routeNumber": "03", "start": "Kandy", "end": "Jaffna", "distanceKm": 300 },
+      { "routeNumber": "04", "start": "Colombo", "end": "Anuradhapura", "distanceKm": 200 },
+      { "routeNumber": "05", "start": "Colombo", "end": "Badulla", "distanceKm": 230 }
+    ],
+    "buses": [
+      { "busNumber": "NB-1001", "route": "01", "currentLocation": { "lat": 6.9271, "lng": 79.8612 } },
+      { "busNumber": "NB-1002", "route": "01", "currentLocation": { "lat": 6.9400, "lng": 80.0000 } },
+      { "busNumber": "NB-1003", "route": "01", "currentLocation": { "lat": 6.9500, "lng": 80.0500 } },
+      { "busNumber": "NB-1004", "route": "01", "currentLocation": { "lat": 6.9600, "lng": 80.1000 } },
+      { "busNumber": "NB-1005", "route": "01", "currentLocation": { "lat": 6.9700, "lng": 80.1500 } },
+  
+      { "busNumber": "NB-2001", "route": "02", "currentLocation": { "lat": 6.0535, "lng": 80.2210 } },
+      { "busNumber": "NB-2002", "route": "02", "currentLocation": { "lat": 6.0600, "lng": 80.2300 } },
+      { "busNumber": "NB-2003", "route": "02", "currentLocation": { "lat": 6.0650, "lng": 80.2400 } },
+      { "busNumber": "NB-2004", "route": "02", "currentLocation": { "lat": 6.0700, "lng": 80.2500 } },
+      { "busNumber": "NB-2005", "route": "02", "currentLocation": { "lat": 6.0750, "lng": 80.2600 } },
+  
+      { "busNumber": "NB-3001", "route": "03", "currentLocation": { "lat": 7.2906, "lng": 80.6337 } },
+      { "busNumber": "NB-3002", "route": "03", "currentLocation": { "lat": 7.3000, "lng": 80.6400 } },
+      { "busNumber": "NB-3003", "route": "03", "currentLocation": { "lat": 7.3100, "lng": 80.6500 } },
+      { "busNumber": "NB-3004", "route": "03", "currentLocation": { "lat": 7.3200, "lng": 80.6600 } },
+      { "busNumber": "NB-3005", "route": "03", "currentLocation": { "lat": 7.3300, "lng": 80.6700 } },
+  
+      { "busNumber": "NB-4001", "route": "04", "currentLocation": { "lat": 6.9271, "lng": 79.8612 } },
+      { "busNumber": "NB-4002", "route": "04", "currentLocation": { "lat": 6.9400, "lng": 79.9000 } },
+      { "busNumber": "NB-4003", "route": "04", "currentLocation": { "lat": 6.9500, "lng": 79.9500 } },
+      { "busNumber": "NB-4004", "route": "04", "currentLocation": { "lat": 6.9600, "lng": 80.0000 } },
+      { "busNumber": "NB-4005", "route": "04", "currentLocation": { "lat": 6.9700, "lng": 80.0500 } },
+  
+      { "busNumber": "NB-5001", "route": "05", "currentLocation": { "lat": 6.9271, "lng": 79.8612 } },
+      { "busNumber": "NB-5002", "route": "05", "currentLocation": { "lat": 6.9350, "lng": 79.8800 } },
+      { "busNumber": "NB-5003", "route": "05", "currentLocation": { "lat": 6.9400, "lng": 79.9000 } },
+      { "busNumber": "NB-5004", "route": "05", "currentLocation": { "lat": 6.9450, "lng": 79.9200 } },
+      { "busNumber": "NB-5005", "route": "05", "currentLocation": { "lat": 6.9500, "lng": 79.9400 } }
+    ],
+    "trips": []
+  }
+  
